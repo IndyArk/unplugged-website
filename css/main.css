@@ -90,6 +90,10 @@ textarea {
 
 
 /* ---------------------- BASE STYLES - Header ---------------------- */
+body {
+  margin: 0;
+}
+
 header, 
 footer {
   display: flex;
@@ -242,7 +246,7 @@ input [type="button"] {
 }
 
 
-/* ------------------------------ ABOUT PAGE ----------------------------- */
+/* ------------------------------ MOBILE STYLES - ABOUT PAGE ----------------------------- */
 .mission {
   display: flex;
   justify-content: center;
@@ -259,7 +263,7 @@ input [type="button"] {
 }
 
 
-/* ---------------------------- FAQ PAGE ---------------------------------- */
+/* ---------------------------- MOBILE STYLES - FAQ PAGE ---------------------------------- */
 .faq {
   display: flex;
   justify-content: center;
@@ -369,7 +373,7 @@ input [type="button"] {
 
 @media only screen and (min-width: 768px) {
   /* Tablet styles here */
-  /*************** HOMEPAGE TABLET STYLES ********************/
+  /* =========================== TABLET STYLES - HOMEPAGE ============================= */
 
   header {
     justify-content: center;
@@ -417,7 +421,7 @@ input [type="button"] {
     width: 85%;
   }
 
-  /********************** ABOUT PAGE TABLET SYLES *************************/
+  /* ======================== TABLET SYLES - ABOUT PAGE ========================== */
 
   .mission-content {
     display: flex;
@@ -440,7 +444,7 @@ input [type="button"] {
   }
 
 
-  /* ======================= FAQ PAGE TABLET STYLES ======================== */
+  /* ======================= TABLET STYLES - FAQ PAGE  ======================== */
 
   .faq .content-wrapper {
     justify-content: space-between;
@@ -458,17 +462,91 @@ input [type="button"] {
 
 
 
-/* +++++++++++++++++++++ ABOUT PAGE DESKTOP STYLES HERE ++++++++++++++++++++++++++++ */
+/* ========================= DESKTOP STYLES ===================================== */
 
 @media only screen and (min-width: 1200px) {
-  aside .content-wrapper {
-    width: 70%;
+  /* ========================= DESKTOP STYLES - HOMEPAGE  ============================ */
+  
+  body {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
   }
+
+  .content-wrapper h1 {
+    display: flex;
+    align-items: flex-start;
+    width: 60%;
+  }
+  
+  aside .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 80%;
+  }
+
+  .form-description,
+  .form {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+  }
+
+  .form-description {
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+
+  .form {
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+
+  .features {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 80%
+  }
+
+  .features article {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-basis: 1;
+    width: 20%;
+    margin: 50px;
+  }
+
+  .reviews {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+
+  /* Image attribution: n56_w1150" by BioDivLibrary is licensed under CC BY-ND 2.0 */
+  .reviews img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 40%;
+    height: auto;
+  }
+
+  /* ========================= DESKTOP STYLES ABOUT PAGE  ================================= */
+
+
+
+
+
+
+/* ========================= DESKTOP STYLES FAQ PAGE  =================================== */
+
+
 }
-
-
-
-
 
 
 
