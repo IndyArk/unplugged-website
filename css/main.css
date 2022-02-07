@@ -367,9 +367,110 @@ input [type="button"] {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet styles here */
+  /*************** HOMEPAGE TABLET STYLES ********************/
+
+  header {
+    justify-content: center;
+  }
+
+  header .content-wrapper {
+    justify-content: center;
+  }
+
+  header nav ul {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 85%;
+  }
+
+  .features article {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-basis: 1;
+  }
+
+  .reviews article {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .features h2 {
+    width: 85%;
+  }
+
+  .reviews,
+  .content-wrapper {
+    width: 85%;
+  }
+
+  /********************** ABOUT PAGE TABLET SYLES *************************/
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mission-content p {
+    width: 50%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 50%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* ======================= FAQ PAGE TABLET STYLES ======================== */
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 40%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+
 }
+
+
+
+/* +++++++++++++++++++++ ABOUT PAGE DESKTOP STYLES HERE ++++++++++++++++++++++++++++ */
+
+@media only screen and (min-width: 1200px) {
+  aside .content-wrapper {
+    width: 70%;
+  }
+}
+
+
+
+
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
