@@ -110,6 +110,10 @@ font-size: 1em;
 text-align: left;
 }
 
+img {
+  width: 100%;
+}
+
 ul, ol {
   list-style-type: none;
 }
