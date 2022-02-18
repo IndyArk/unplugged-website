@@ -103,15 +103,11 @@ html {
 } 
 
 body {
-background-color: #527158;
+
 color: #e2e3ed;
 font-family: 'Open Sans', sans-serif;
 font-size: 1em;
 text-align: left;
-}
-
-header {
-  background-color: #000;
 }
 
 img {
@@ -134,18 +130,20 @@ a {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  margin: 0;
 }
 
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
   margin: 20px 0;
-  font-size: 1.125em;
+  font-size: 1.5em;
+  margin: 0;
 }
 
 p {
-  font-size: 0.875em;
-  line-height: 1.285;
+  font-size: 1em;
+  line-height: 1.3;
 }
 
 address {
@@ -157,17 +155,18 @@ address {
   margin: 50px 0;
 }
 
-
-
-/* ---------------------- BASE STYLES - Header ---------------------- */
 header, 
 footer {
-  background-color: #517057;
+  background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
+
+
+
+/* ---------------------- BASE STYLES - Header ---------------------- */
 
 header {
   padding: 15px 0;
@@ -209,14 +208,22 @@ header nav ul {
   width: 100%;
 }
 
+header nav ul li {
+  font-size: 1.125em;
+}
 
 
-/* ---------------------------- BASE STYLES - HERO AREA & FORM AREA ------------------------- */
 
-aside .form {
-  margin-top: 30px;
+/* ---------------------------- BASE STYLES FORM AREA ------------------------- */
+
+aside {
+  background-color: #527158;
 }
  
+aside h2 {
+  margin: 0;
+}
+
 input[type=text] {
   box-sizing: border-box;
   width: 100%;
@@ -239,12 +246,29 @@ input[type=button] {
   text-transform: uppercase;
 }
 
+/* ---------------------------- BASE STYLES - Features Area ---------------- */
+
+.features-item-description {
+  text-align: center;
+}
+
+/* ---------------------------- BASE STYLES - Reviews Area ----------------- */
+
+.reviews {
+  background-color: #2a423a;
+}
+
 
 
 /* ----------------------------- BASE STYLES - Footer ----------------------- */
 
 footer {
+  text-align: center;
   flex-direction: column;
+}
+
+footer h4 {
+  margin-bottom: 10px;
 }
 
 footer p {
@@ -267,21 +291,30 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  border-radius: 50%;
+  color: #e2e3ed;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+footer .social-icons p i {
+  font-size: 2em;
 }
 
 footer .copyright {
   text-align: center;
-  margin-bottom: 10px;
+  margin: 25px 0;
 }
 
 
 
 /* --------------------------- MOBILE STYLES - HOMEPAGE ------------------------- */
 
-/* Hero Area */
+/******** Hero Area ********/
 
 .hero-area {
   background: url('../img/bridge-woman-forest-jake-melara-30679-unsplash.jpg') center no-repeat #333;
@@ -299,7 +332,9 @@ footer .copyright {
   line-height: 1.2;
 }
 
-/* Aside */
+
+
+/******** Aside ********/
 
 aside {
   display: flex;
@@ -308,19 +343,13 @@ aside {
   flex-flow: row wrap;
 }
 
-.form-description h2 {
-  padding: 30px 0;
-}
-
-.form h2 {
-  padding: 38px 0 0 0;
-}
-
 input [type="button"] {
   padding: 0 0 50px 0;
 }
 
-/* Features */
+
+
+/********* Features ************/
 
 .features {
   background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat #333;
@@ -345,7 +374,7 @@ input [type="button"] {
 
 .features i {
 	font-size: 3.75em;
-        margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .features .features-items {
@@ -358,9 +387,13 @@ input [type="button"] {
 .features p {
   margin: 0;
 }
-/* Reviews */
+
+
+
+/******* Reviews *********/
 
 .reviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -368,6 +401,7 @@ input [type="button"] {
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1em;
 }
 
 .reviews h3 {
@@ -378,6 +412,7 @@ input [type="button"] {
 
 /* ------------------------------ MOBILE STYLES - ABOUT PAGE ----------------------------- */
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -386,6 +421,7 @@ input [type="button"] {
 
 
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -394,7 +430,7 @@ input [type="button"] {
 
 .map figure {
   position: relative;
-  padding-bottom: 125%;
+  padding-bottom: 37.5%;
   height: 0;
   width: 100%;
   overflow: hidden;
@@ -570,7 +606,7 @@ input [type="button"] {
   }
 
 
-  /* ======= HERO-AREA - HOMEPAGE - TABLET ========= */
+  /* ======= HERO-SECTION - HOMEPAGE - TABLET ========= */
 
   .hero-area {
     min-height: 600px;
@@ -582,12 +618,12 @@ input [type="button"] {
     margin: 0;
   }
 
-/* ==================== ASIDE ====================== */
+/* ==================== FORM AREA ASIDE - HOMEPAGE - TABLET ====================== */
   aside .content-wrapper {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
-    margin: 50px 0;
+    margin: 0 0 30px 0;
   }
 
   aside .content-wrapper .form-description,
@@ -597,7 +633,7 @@ input [type="button"] {
   }
 
 
-  /* ========= FEATURES - HOMEPAGE - TABLET ========== */
+  /* ========= FEATURES SECTION - HOMEPAGE - TABLET ========== */
 
   .features h2 {
     margin-bottom: 20px;
@@ -615,7 +651,7 @@ input [type="button"] {
   }
 
 
-  /* ========= REVIEWS - HOMEPAGE - TABLET ============ */
+  /* ========= REVIEWS SECTION - HOMEPAGE - TABLET ============ */
 
   .reviews article {
     display: flex;
@@ -724,6 +760,13 @@ input [type="button"] {
     max-width: 960px;
   }
 
+  /* ========= HEADER - HOMEPAGE - DESKTOP =========== */
+
+  header figure {
+    max-width: 300px;
+    height: auto;
+  }
+
   /* ========= HERO-AREA - HOMEPAGE - DESKTOP ======== */
 
   .hero-area h1 {
@@ -738,7 +781,7 @@ input [type="button"] {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 30%;
+    width: 40%;
   }
 
   /* ========== FEATURES - HOMEPAGE - DESKTOP ============ */
@@ -757,6 +800,10 @@ input [type="button"] {
     width: 40%;
   }
 
+  .reviews h3 {
+    font-size: 2em;
+  }
+
 
   /* ======================================================================= */
   /* ====================== ABOUT PAGE - DESKTOP STYLES ===================== */
@@ -764,6 +811,14 @@ input [type="button"] {
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
+    font-size: 3em;
+  }
+
+  .mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: nowrap;
   }
 
 /* ========================================================================== */
